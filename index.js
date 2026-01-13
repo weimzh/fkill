@@ -151,6 +151,8 @@ const defaultKill = (input, options) => {
 
 	if (options.force) {
 		arguments_.unshift('-9');
+	} else {
+		arguments_.unshift('-15');
 	}
 
 	if (killByName && options.ignoreCase) {
